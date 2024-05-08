@@ -10,36 +10,41 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
-
+   <!-- H = vh , w = vw -->
 <body>
     <div class="main w-full">
-        <div class="offer bg-[#99c1c5] py-3 px-4">
-            <h4 class="text-sm">Use code "Sharktank" and get flat 20% OFF (Not applicable on iced teas)</h4>
+        <div class="offer bg-[#99c1c5] py-3 px-4 md:px-10 lg:px-20">
+            <h4 class="text-base md:text-sm">Use code "Sharktank" and get flat 20% OFF (Not applicable on iced teas)</h4>
         </div>
-        <div class="navbar flex justify-between w-full px-4 py-6">
+         <div class="navbar flex justify-between items-center md:justify-start w-full px-4 py-6">
             <img class="w-40" src="./image/beyondwater_Logo_1x1-01_800x.avif" alt="">
-            <div class="right flex gap-5 items-center">
+            <div class="hidden md:flex gap-10 ml-10">
+                <a class="text-sm tracking-tight font-semibold capitalize" href="">go to home</a>
+                <a class="text-sm tracking-tight font-semibold capitalize" href="">shope by category</a>
+                <a class="text-sm tracking-tight font-semibold capitalize" href="">more links</a>
+            </div>
+            <div class="right md:hidden flex gap-5 items-center">
                 <a class="text-sm font-medium" href="#">Shope</a>
                 <a class="text-sm font-medium" href="#">Menu</a>
             </div>
         </div>
-        <div class="banner">
-            <div class="img w-full h-[40vh] ">
+        <div class="banner w-full md:flex md:flex-row-reverse">
+            <div class="img w-full md:w-1/2 h-[40vh] md:h-[100vh] ">
                 <img class="w-full h-full object-cover object-position-center" src="./image/banner.jpg" alt="">
             </div>
-            <div class="info px-4 py-10 w-full min-h-[40vh]">
-                <h3 class="text-3xl font-medium tracking-tighter">We make water</h3>
-                <h1 class="text-7xl font-bold tracking-tighter leading-[3.5rem]">Super-</h1>
-                <h1 class="text-7xl font-bold tracking-tighter leading-[3.5rem]">Powered 💪🏻</h1>
-                <h5 class="text-xl font-medium leading-none tracking-tighter mt-3">That's Our story</h5>
-                <div class=" w-3/4 shopingoffer flex items-center gap-2 rounded-xl mt-4 px-4 py-1 bg-[#FBD11B]">
+            <div class="info px-4 py-10 w-full md:W-1/2 md:pl-32 min-h-[40vh]">
+                <h3 class="text-3xl md:text-5xl font-medium  tracking-tighter">We make water</h3>
+                <h1 class="text-7xl md:text-[7rem] md:leading-[6rem] font-bold tracking-tighter leading-[3.5rem]">Super-</h1>
+                <h1 class="text-7xl md:text-[7rem] md:leading-[6rem] font-bold tracking-tighter leading-[3.5rem]">Powered 💪🏻</h1>
+                <h5 class="text-xl  md:text-4xl font-medium leading-none tracking-tighter mt-3">That's Our story</h5>
+                <div class="md:w-[50%] md:py-2 w-3/4 shopingoffer flex items-center gap-2 rounded-xl mt-4 px-4 py-1 bg-[#FBD11B]">
                     <i class="ri-truck-line"></i>
-                    <h3 class="text-sm font-semibold tracking-tight leading-none">Free shiping on order above 500</h3>
+                    <h3 class="text-sm md:text-lg font-semibold tracking-tight leading-none">Free shiping on order above 500</h3>
                 </div>
                 <button class="text-white bg-black px-5 py-3 mt-5 rounded-lg font-semibold">Check Products</button>
             </div>
         </div>
-        <div class="sugar my-5 w-full h-[50vh] flex items-center overflow-hidden">
+<div class="sugar my-5 w-full h-[50vh] flex items-center overflow-hidden">
             <img class="bg-red-500 w-full h-full object-contian"
                 src="https://images.unsplash.com/photo-1552089123-2d26226fc2b7?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="">
@@ -148,7 +153,7 @@
 
             </div>
         </div>
-        <footer class="text-sm font-semibold text-center py-10 w px-3">This is a Re-imagined website for Sharktank brand beyondwater.</footer>
+        <footer class="text-sm font-semibold text-center py-10 w px-3">This is a Re-imagined website for Sharktank brand beyondwater.</footer> 
     </div>
         <script src="script.js"></script>
         
